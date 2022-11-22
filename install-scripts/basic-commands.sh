@@ -38,4 +38,4 @@ systemctl enable docker.service
 
 useradd -m sam
 echo sam:password | chpasswd
-usermod -aG libvirt docker lp sam
+usermod -aG sys,log,libvirt,docker,lp,network,power,rfkill,users,video,storage,audio,wheel,/bin/zsh sam
