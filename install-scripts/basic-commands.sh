@@ -33,7 +33,8 @@ systemctl enable avahi-daemon
 systemctl enable reflector.timer
 systemctl enable libvirtd
 systemctl enable firewalld
-systemctl enable acpid docker.service
+systemctl enable acpid
+systemctl enable docker.service
 
 useradd -m sam
 echo sam:password | chpasswd
