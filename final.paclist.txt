@@ -104,6 +104,7 @@ openbsd-netcat
 openssh
 os-prober
 pacman-contrib
+pamixer
 pavucontrol
 perl
 pipewire
