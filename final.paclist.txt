@@ -22,6 +22,7 @@ bluez
 bluez-utils
 bridge-utils
 btrfs-progs
+cava
 cmake
 cronie
 cups
@@ -90,7 +91,10 @@ man-pages
 memtest86+
 mesa
 mkinitcpio
+mpc
+mpd
 mpv
+ncmpcpp
 neovim
 netctl
 net-tools
@@ -133,6 +137,7 @@ sdl2
 sudo
 system-config-printer
 systemd-resolvconf
+tealdeer
 terminator
 thunar
 unrar

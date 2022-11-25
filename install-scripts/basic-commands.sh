@@ -25,17 +25,19 @@ pacman -Syy - <final.paclist.txt
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 
-systemctl enable NetworkManager
-systemctl enable bluetooth
-systemctl enable cups.service
-systemctl enable sshd
-systemctl enable avahi-daemon
-systemctl enable reflector.timer
-systemctl enable libvirtd
-systemctl enable firewalld
 systemctl enable acpid
+systemctl enable avahi-daemon
+systemctl enable bluetooth
+systemctl enable cronie.service
+systemctl enable cups.service
 systemctl enable docker.service
+systemctl enable firewalld
+systemctl enable libvirtd
+systemctl enable NetworkManager
+systemctl enable reflector.timer
+systemctl enable sshd
 
 useradd -m sam
 echo sam:password | chpasswd
 usermod -aG sys,log,libvirt,docker,lp,network,power,rfkill,users,video,storage,audio,wheel,/bin/zsh sam
+systemctl enable --user mpd.service
