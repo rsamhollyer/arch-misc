@@ -107,6 +107,7 @@ pacman-contrib
 pamixer
 pavucontrol
 perl
+picom
 pipewire
 pipewire-alsa
 pipewire-docs
