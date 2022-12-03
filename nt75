@@ -54,6 +54,8 @@ default partial alphanumeric_keys modifier_keys
     key<AB08>{[comma, less]};
     key<AB09>{[period, greater]};
     key<AB10>{[slash, question]};
+    key<PRSC>{[Delete]};
+    key<DELE>{[Home]};
     key<CAPS>{[Hyper_L]};
     key<HYPR>{[Hyper_R, Hyper_L]};
     modifier_map Mod3{<HYPR>};
